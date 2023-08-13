@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page Example</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins";
+        }
+
+        .navbar {
+            width: 100vw;
+            height: 10vh;
+            background: #28b1df;
+            display: flex;
+            color: #ffffff;
+        }
+
+        .navbar-brand {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar-item {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo {
+            height: 60px;
+            width: 60px;
+            margin-right: 2%;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline;
+            margin: 35px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .home-item {
+            padding: 10px 20px;
+            background-color: #008dbc;
+            border-radius: 1000px;
+        }
+
+        /* bagian hero */
+        .hero {
+            width: 100vw;
+            height: 90vh;
+            background: #a4e8ff;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .area-title {
+            width: 31%;
+            height: 100%;
+            padding: 120px;
+        }
+
+        .text-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #008dbc;
+        }
+
+        .text-tagline {
+            font-size: 1em;
+            margin-top: 40px;
+            color: #008dbc;
+        }
+
+        .button-explore {
+            margin-top: 65px;
+        }
+
+        .btn-explore:hover {
+            background-color: #008dbc;
+        }
+
+        .btn-explore:active {
+            background-color: #008dbc;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .btn-explore {
+            background-color: #28b1df;
+            padding: 13px 30px;
+            border-radius: 1000px;
+            text-decoration: none;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .img-brand img {
+            width: 1000px;
+            clip-path: circle();
+        }
+
+        .area-image {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* bagian about */
+
+        #about {
+            width: 100vw;
+            height: 90vh;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .about-text {
+            font-size: 3em;
+            color: #55d5ff;
+            font-weight: bold;
+        }
+
+        .about-title {
+            width: 31%;
+            height: 100%;
+            padding: 150px;
+        }
+
+        .about-image {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-img-brand img {
+            clip-path: circle();
+        }
+
+        .about-btn-explore {
+            background-color: #28b1df;
+            padding: 13px 30px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .about-button-explore {
+            margin-top: 20%;
+        }
+
+        .about-btn-explore:hover {
+            background-color: #006586;
+        }
+
+        .about-btn-explore:active {
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+            background-color: #006586;
+        }
+
+        .about-tagline {
+            font-size: 1.3em;
+            margin-top: 40px;
+            color: #55d5ff;
+
+        }
+
+        .about-img-left img {
+            width: 700px;
+            margin-top: 3%;
+            float: left;
+        }
+
+        .about-img-right img {
+            float: right;
+            width: 400px;
+
+        }
+
+        /* bagian service */
+        .service {
+            width: 100vw;
+            height: 90vh;
+            background: #086274;
+            position: relative;
+            justify-content: center;
+            display: flex;
+        }
+
+        .service-judul {
+            margin-top: 3%;
+            color: #ffffff;
+            position: absolute;
+        }
+
+        .kotak-kotak{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .kotak1{
+            background: #ffffff;
+            width: 30%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-direction: column;
+            margin-right: 3%;
+            text-align: center;
+        }
+
+        .kotak2{
+            background: #ffffff;
+            width: 30%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-direction: column;
+            text-align: center;
+            margin-right: 3%;
+        }
+
+        .kotak3{
+            background: #ffffff;
+            width: 30%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-direction: column;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="navbar-brand">
+            <img class="logo"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png"
+                alt="Manchester City">
+            <h3>Manchester City</h3>
+        </div>
+        <div class="navbar-item">
+            <div class="list-item">
+                <ul>
+                    <li> <a class="home-item" href="#">Home</a> </li>
+                    <li> <a href="#about">About Us</a> </li>
+                    <li> <a href="#">Service</a> </li>
+                    <li> <a href="#">Players</a> </li>
+                    <li> <a href="#">Contact Us</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="hero">
+        <div class="area-title">
+            <div class="text-title">
+                <p>Manchester City<br>Official Web</p>
+            </div>
+            <div class="text-tagline">
+                <p>Manchester City Football Club is a professional football club from England that plays in the
+                    English Premier League. This club is 1 city together with Manchester United and is headquartered
+                    at the Etihad Stadium, Manchester.</p>
+            </div>
+
+            <div class="button-explore">
+                <a href="modern-form.html" class="btn-explore">Join Team</a>
+            </div>
+        </div>
+        <div class="area-image">
+            <div class="img-brand">
+                <img src="https://e0.365dm.com/23/05/2048x1152/skysports-graphic-manchester_6160328.png"
+                    alt="Manchester City">
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+
+        <div class="about-image">
+            <div class="about-img-brand">
+
+                <div class="about-img-left">
+                    <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt89ca65c0f58dd9ac/63cd5030567d657e227fcbb4/GettyImages-1458491605.jpg?auto=webp&format=pjpg&width=3840&quality=60"
+                        alt="Manchester City">
+                </div>
+
+                <div class="about-img-right">
+                    <img src="https://cdn.antaranews.com/cache/1200x800/2023/06/11/2023-06-10T223922Z_2066564787_RC2MG1AI4QYD_RTRMADP_3_SOCCER-CHAMPIONS-MCI-INT-REPORT.jpg"
+                        alt="Manchester City">
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="about-title">
+            <div class="about-text">
+                <p>About Us</p>
+            </div>
+            <div class="about-tagline">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam culpa vero perspiciatis illo
+                    asperiores officiis quidem possimus voluptatem ex esse.</p>
+            </div>
+
+            <div class="about-button-explore">
+                <a href="https://id.wikipedia.org/wiki/Manchester_City_F.C." class="about-btn-explore"
+                    target="_blank">Read More</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="service">
+        <div class="service-judul">
+            <h1>Achievements</h1>
+        </div>
+
+        <div class="kotak-kotak">
+
+            <div class="kotak1">
+                <div class="img-kotak1">
+                    <img src="https://assets.stickpng.com/images/5842fe18a6515b1e0ad75b3d.png" alt="Trophy" style="width: 80px;">
+                </div>
+
+                <div class="judul-kotak1">
+                    <h3>Champions League</h3>
+                </div>
+
+                <div class="text-kotak1">
+                    <p>There are any variations of passages of lorem ipsum available</p>
+                </div>
+            </div>
+
+            <div class="kotak2">
+                <div class="img-kotak1">
+                    <img src="https://assets.stickpng.com/images/5842fe18a6515b1e0ad75b3d.png" alt="Trophy" style="width: 80px;">
+                </div>
+
+                <div class="judul-kotak1">
+                    <h3>Premier League</h3>
+                </div>
+
+                <div class="text-kotak1">
+                    <p>There are any variations of passages of lorem ipsum available</p>
+                </div>
+            </div>
+
+            <div class="kotak3">
+                <div class="img-kotak1">
+                    <img src="https://assets.stickpng.com/images/5842fe18a6515b1e0ad75b3d.png" alt="Trophy" style="width: 80px;">
+                </div>
+
+                <div class="judul-kotak1">
+                    <h3>Fa Cup</h3>
+                </div>
+
+                <div class="text-kotak1">
+                    <p>There are any variations of passages of lorem ipsum available</p>
+                </div>
+            </div>
+
+            <div class="kotak4"></div>
+
+            <div class="kotak5"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

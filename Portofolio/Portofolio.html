@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
+        rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <div id="header">
+         <div class="container">
+            <nav>
+                <img src="../Images/logo1.png" alt="Logo" class="logo">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Student at IDN Boarding School</p>
+                <h1>Hi I'm <span>Vallian Sayoga</span><br>From Indonesia</h1>
+            </div>
+         </div>
+    </div>
+    <hr>
+    <!----------- about ----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../Images/akumask2.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nobis voluptatibus reiciendis enim cumque delectus, saepe corporis labore nesciunt ullam nisi ducimus sapiente non commodi inventore at voluptatum ut amet itaque, repellendus distinctio hic odio tenetur. Dolorem mollitia placeat nihil illo laudantium accusantium, temporibus, aut repellat reprehenderit aspernatur quam assumenda nostrum, atque ipsa? Rerum eaque, repellat quos a molestias quisquam.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p> -->
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Website Development</span><br>Building Websites with HTML</li>
+                            <li><span>Game Development</span><br>Making Simple Games</li>
+                            <li><span>Designer</span><br>Designing UI/UX</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Head Security Student Council</span><br>The Leader Of Security Student Council Junior Highschool</li>
+                            <li><span>Game Development</span><br>Making Simple Games</li>
+                            <li><span>Designer</span><br>Designing UI/UX</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Head Security Student Council</span><br>The Leader Of Security Student Council Junior Highschool</li>
+                            <li><span>Game Development</span><br>Making Simple Games</li>
+                            <li><span>Designer</span><br>Designing UI/UX</li>
+                        </ul>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------- services --------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consectetur ducimus blanditiis.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consectetur ducimus blanditiis.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consectetur ducimus blanditiis.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script>
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script> -->
+
+</body>
+
+</html>

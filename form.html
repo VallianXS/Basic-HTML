@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .panel {
+            width: 30%;
+            height: 60%;
+            background: #ffffff;
+            border: 5px #9e9e9e solid;
+            border-radius: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            width: 80%;
+            height: 60%;
+            background: #cfcfcf;
+            padding: 20px;
+        }
+
+        .group {
+            width: 100%;
+            background: #ffffff;
+            padding: 3px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px #000000 solid;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            background: transparent;
+            border: none;
+        }
+
+        .group2 {
+            width: 100%;
+            margin-top: 8%;
+            background: #ffffff;
+            border: 1px #000000 solid;
+            padding: 3px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .google {
+            width: 100%;
+            height: 20%;
+            margin-top: 8.5%;
+            background: #ffffff;
+            border: 1px #000000 solid;
+            padding: 3px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .login {
+            border: 1px #000000 solid;
+            background: #ffffff;
+            width: 100%;
+            margin-top: 8%;
+        }
+
+        .login:hover {
+            background-color: #9e9e9e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel">
+            <form action="#">
+                <h1 style="text-align: center; margin-bottom: 3%;">Login</h1>
+                <div class="group">
+                    <input type="text" class="email" placeholder="Email">
+                </div>
+                <div class="group2">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+
+                <div class="login">
+                    <input type="submit" value="Log In">
+                </div>
+
+                <div class="google">
+                    <a href="https://google.com">
+                        <i class="fa fa-google"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

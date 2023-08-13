@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Form</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> <!-- Ini untuk link font -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat";
+            overflow: hidden;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #0088cc;
+            background-image: url(https://www.mancity.com/meta/media/kppnc3ji/team-lifting-trophy.png);
+            background-size: cover;
+        }
+
+        .panel {
+            width: 30%;
+            padding: 20px;
+        }
+
+        fieldset {
+            width: 90%;
+            height: 90%;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 7%;
+        }
+
+
+        legend {
+            text-align: center;
+            background: #ffffff;
+            padding: 10px;
+            margin: 0px;
+            border-radius: 100px;
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+        }
+
+        form {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        input {
+            width: 95%;
+            padding: 10px;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel">
+            <fieldset>
+                <legend><img
+                        src="https://upload.wikimedia.org/wikipedia/id/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png"
+                        alt="Manchester City" class="logo"></legend>
+
+                <form action="index.html" method="post">
+                    <input type="text" required placeholder="Full Name">
+                    <input type="text" required placeholder="Shirt Name">
+                    <input type="text" required placeholder="Shirt Number">
+                    <input type="text" required placeholder="Academy">
+                    <input type="text" required placeholder="Email">
+                    <input type="submit" value="Enter">
+                </form>
+
+            </fieldset>
+        </div>
+    </div>
+</body>
+
+</html>
