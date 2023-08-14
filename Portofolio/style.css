@@ -115,14 +115,14 @@ nav ul li a:hover::after{
 
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px;
+    margin: 40px 0 15px;
 }
 
 .tab-links{
+    color: #f1f1f1;
+    font-weight: 700;
     margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
+    font-size: 20px;
     position: relative;
 }
 
@@ -157,6 +157,46 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.skill-bar{
+    height: 14px;
+    background: #282828;
+    border-radius: 3px;
+}
+
+.skill-per{
+    height: 14px;
+    background: #ff004f;
+    border-radius: 3px;
+    position: relative;
+}
+
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #ffffff;
+    border-radius: 4px;
+    font-size: 14px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
 
 /* ----------- Services ----------- */
 
