@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background: #010101;
+        }
+
+        .card-area{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .card{
+            background: #ffffff;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px;
+        }
+
+        @media screen and (max-width: 767px) {
+            .container{
+                background: #262626;
+            }
+
+            .card-area{
+                grid-template-columns: auto;
+            }
+
+            .card{
+                background: #c6c6c6;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-area">
+            <div class="card">
+                <h1>Card 1</h1>
+            </div>
+            
+            <div class="card">
+                <h1>Card 1</h1>
+            </div>
+
+            <div class="card">
+                <h1>Card 1</h1>
+            </div>
+
+            <div class="card">
+                <h1>Card 1</h1>
+            </div>
+
+            <div class="card">
+                <h1>Card 1</h1>
+            </div>
+
+            <div class="card">
+                <h1>Card 1</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
